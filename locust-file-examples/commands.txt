@@ -1,0 +1,36 @@
+Web UI example (single worker)
+===============================
+
+locust -f locust-file-examples/web-ui/locustfile.py
+
+
+Web UI example (multiple workers - distributed)
+===============================================
+
+Start locust in 'master' mode
+
+locust -f locust-file-examples/web-ui/locustfile.py --master
+
+Generate workers pointing to master
+
+locust -f locust-file-examples/web-ui/locustfile.py --worker --master-host=127.0.0.1
+
+
+Docker example (single worker)
+==============================
+
+docker-compose up
+
+Docker example (multiple workers - distributed)
+===============================================
+
+docker-compose up --scale worker=4
+
+
+Running headless (CI)
+=====================
+
+<command> --headless -u 1000 -r 100 --run-time 1h30m
+
+Limited Time
+============
