@@ -31,6 +31,4 @@ Running headless (CI)
 =====================
 
 <command> --headless -u 1000 -r 100 --run-time 1h30m
-
-Limited Time
-============
+ 
